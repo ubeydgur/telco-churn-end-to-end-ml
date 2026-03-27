@@ -205,3 +205,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Data Science / Project Specific
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+*.parquet
+models/*.pkl
+models/*.joblib
+mlruns/
+mlartifacts/
+.DS_Store
