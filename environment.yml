@@ -1,0 +1,52 @@
+name: telco-churn-end-to-end-ml
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python
+  - python=3.11
+
+  # Data Science - Temel
+  - pandas
+  - numpy
+  - scikit-learn
+  - scipy
+
+  # Görselleştirme
+  - matplotlib
+  - seaborn
+
+  # Gradient Boosting
+  - xgboost
+  - lightgbm
+
+  # Notebook
+  - jupyterlab
+  - ipykernel
+
+  # API
+  - fastapi
+  - uvicorn
+
+  # Model & Deney Takibi
+  - mlflow
+
+  # Konfigürasyon
+  - pyyaml
+  - pydantic
+
+  # Test & Kod Kalitesi
+  - pytest
+  - pytest-cov
+  - ruff
+  - pre-commit
+
+  # Diğer
+  - joblib
+  - imbalanced-learn    # SMOTE için
+
+  # pip ile kurulanlar (conda'da olmayan veya pip'in daha güncel olduğu paketler)
+  - pip:    
+    - kaggle
+    - httpx               # API test için
+
